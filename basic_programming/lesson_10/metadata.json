@@ -1,0 +1,17 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2023-11-20",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+"code/demo20231126_1/src/Main.java",
+"code/dz20231120_1/src/Main.java",
+"code/dz20231120_1/src/Main2.java",
+"code/dz20231120_2/src/Main.java",
+"code/dz20231120_3/src/Main.java"
+  ],
+  "video": ""
+}
+
+
