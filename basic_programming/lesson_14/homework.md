@@ -11,13 +11,15 @@
 String insertStr (String target, String source, int position).
 * target целевая строка
 * source вставляемая строка
-* position позиция вставки  
+* position позиция вставки 
+
 Метод должен возвращать новую строку, которая получена 
 путем "вставки" строки source в строку target в позицию position.  
 * Если position больше длинны строки target тогда результат - 
 простое объединение строк.
 * Если position больше длинны строки target, то строка source вставляется 
 в строку target в позицию position, а остаток строки target отзывается в конце   
+
 Примеры:
  * insertStr ("Hello", " world", 10)  Результат: "Hello world"
  * insertStr ("Script", "Java", 0)  Результат: "JavaScript"
