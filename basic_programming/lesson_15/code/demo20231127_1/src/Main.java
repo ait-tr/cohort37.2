@@ -4,7 +4,7 @@ public class Main {
      // array
 
        int[] arr = {2,4,1,-1};
-       String[] users = {"Jack", "Nick", "Elena" };
+       String[] users =  ;
        double[] numbers = {3.3, 3.5, 6.0, 7.1 };
 
 
