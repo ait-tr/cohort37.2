@@ -6,7 +6,8 @@
 * используя объект person и массив технологий: new Person(person, new String[]{"Java","Spring Boot","SQL"}) 
 * используя объект person и строке со списком технологий через запятую: new Person(person, "Java,Spring Boot,SQL") 
 * используя строку firstName, строку lastName и  массив технологий: new Person("Jack" "Johnson", new String[]{"Java","Spring Boot","SQL"})  
-* используя строку ФИО (firstName и lastName разделены пробелом) массив технологий: new Person("Jack Johnson", new String[]{"Java","Spring Boot","SQL"})
+* используя строку ФИО (firstName и lastName разделены пробелом) массив технологий: new Person("Jack Johnson", new String[]{"Java","Spring Boot","SQL"})  
+
 Необходимо создать массив  Programmer и вывести его на экран.
 
 ### 2. (опционально, для тех, кто сделал задачу 1, чуть сложнее)
