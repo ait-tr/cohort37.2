@@ -55,7 +55,7 @@ public class Main {
 
         for (Auto a : autos){
             int ownerYear = a.getOwner().getBirthday().getYear();
-            
+
             if (ownerYear == 1987){
                 System.out.println(a);
             }
