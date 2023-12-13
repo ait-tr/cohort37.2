@@ -5,11 +5,9 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-"code/demo20231212_1/src/Main.java",
-"code/demo20231212_1/src/People.java",
-"code/demo20231212_1/src/Person.java",
-"code/dz20231212_1/src/Main.java",
-"code/dz20231212_1/src/NamesHandler.java"
+"code/demo20231213_1/src/Main.java",
+"code/demo20231213_1/src/People.java",
+"code/demo20231213_1/src/Person.java"
  ],
   "video": ""
 }
