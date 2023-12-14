@@ -4,9 +4,7 @@ public class Person {
     private int[] array;
 
 
-    public int[] getArray() {
-        return array;
-    }
+
 
     public Person(String name, int age, int[] array) {
         this.name = name;
@@ -30,5 +28,9 @@ public class Person {
 
     public int getAge() {
         return age;
+    }
+
+    public int[] getArray() {
+        return array;
     }
 }
