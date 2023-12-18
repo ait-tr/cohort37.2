@@ -1,0 +1,24 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2023-11-28",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+"code/dz20231218_1/src/Employee.java",
+"code/dz20231218_1/src/LazyEmployee.java",
+"code/dz20231218_1/src/Main.java",
+"code/dz20231218_1/src/Manager.java",
+"code/dz20231218_1/src/Programmer.java",
+"code/dz20231218_1/src/QAEngineer.java",
+"code/dz20231218_1/src/SupportEngineer.java",
+"code/dz20231218_2/src/Book.java",
+"code/dz20231218_2/src/FantasyBooks.java",
+"code/dz20231218_2/src/HorrorBooks.java",
+"code/dz20231218_2/src/Main.java",
+"code/dz20231218_2/src/ProgrammingBooks.java"
+ ],
+  "video": ""
+}
+
+
