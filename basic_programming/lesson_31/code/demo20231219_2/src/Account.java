@@ -30,7 +30,7 @@ public abstract class Account {
     }
 
 
-     
+
     public final boolean withdrawal(double amount){
         if(amount>=balance){
             balance-=amount;
