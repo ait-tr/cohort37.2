@@ -94,7 +94,7 @@ public class Cat {
 
 В сеттерах может быть дополнительная проверка:
 ```java
-public class Person {
+public class Student {
 
   private int age;
 
@@ -119,7 +119,7 @@ public class Person {
 Название метода традиционно выглядит как `public ТипАтрибута getАтрибут()`.
 
 ```java
-public class Person {
+public class Student {
 
   private int age;
 

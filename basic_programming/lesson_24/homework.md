@@ -1,7 +1,7 @@
 
 #### 1. 
-Давайте создадим класс Programmer. Он будет состоять из следующих полей { Person person, String[] listOfTechnologies }  
-Класс Person содержит всего два поля { String firstName, String lastName }. Необходимо реализовать конструкторы таким образом, 
+Давайте создадим класс Programmer. Он будет состоять из следующих полей { Student person, String[] listOfTechnologies }  
+Класс Student содержит всего два поля { String firstName, String lastName }. Необходимо реализовать конструкторы таким образом, 
 что бы Programmer можно было создать:     
 * используя объект person и массив технологий: new Programmer(person, new String[]{"Java","Spring Boot","SQL"}) 
 * используя объект person и строке со списком технологий через запятую: new Programmer(person, "Java,Spring Boot,SQL") 
