@@ -29,6 +29,7 @@ public class Main {
         System.out.println(group);
 
         // ------------------------------
+
         Group2 g1= Group2.getInstance("33");
         System.out.println(g1);
 

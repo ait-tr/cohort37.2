@@ -1,6 +1,8 @@
 public class Group2 {
     // singleton
     private String title;
+
+
     private static Group2  instance = null;
 
 
