@@ -1,0 +1,30 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2024-01-09",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+"code/demo20240109_1/src/Animal.java",
+"code/demo20240109_1/src/Dog.java",
+"code/demo20240109_1/src/Duck.java",
+"code/demo20240109_1/src/Jumpable.java",
+"code/demo20240109_1/src/Main.java",
+"code/demo20240109_1/src/Person.java",
+"code/demo20240109_1/src/Runable.java",
+"code/demo20240109_1/src/RunAndSwimable.java",
+"code/demo20240109_1/src/Swimable.java",
+"code/dz20240109_1/src/Hotel.java",
+"code/dz20240109_1/src/Main.java",
+"code/dz20240109_1/src/Room.java",
+"code/dz20240109_1/src/RoomCapacity.java",
+"code/dz20240109_1/src/RoomType.java",
+"code/Singleton/src/Demo1.java",
+"code/Singleton/src/Demo2.java",
+"code/Singleton/src/EnumSingleton.java",
+"code/Singleton/src/Main.java"
+ ],
+  "video": ""
+}
+
+
