@@ -12,9 +12,12 @@ public class Duck extends Animal implements Swimable, Runable{
                 '}';
     }
 
+
     public  void run(){
         System.out.println("Я утка. Я бегаю смешно");
     }
+
+
 
     public  void swim(){
         System.out.println("Я утка. Я хорошо плаваю");

@@ -1,0 +1,23 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2024-01-09",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+"code/demo20240110_1/src/Main.java",
+"code/demo20240110_1/src/Person.java",
+"code/demo20240110_2/src/Main.java",
+"code/demo20240110_2/src/NumberReader.java",
+"code/dz20240110_1/src/DHL.java",
+"code/dz20240110_1/src/Email.java",
+"code/dz20240110_1/src/MailDeliveryService.java",
+"code/dz20240110_1/src/Main.java",
+"code/dz20240110_1/src/Menu.java",
+"code/dz20240110_1/src/Pigeon.java",
+"code/dz20240110_1/src/Sender.java"
+ ],
+  "video": ""
+}
+
+
