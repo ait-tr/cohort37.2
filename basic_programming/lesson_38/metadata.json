@@ -1,0 +1,21 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2024-01-09",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+"code/demo20240111_1/src/ComparatorPersonByAge.java",
+"code/demo20240111_1/src/Main.java",
+"code/demo20240111_1/src/Person.java",
+"code/dz20240111_1/src/ConstantListCreator.java",
+"code/dz20240111_1/src/IntegerListCreator.java",
+"code/dz20240111_1/src/IntegerListUtil.java",
+"code/dz20240111_1/src/Main.java",
+"code/dz20240111_1/src/RandomListCreator.java",
+"code/dz20240111_1/src/ScannerListCreator.java"
+ ],
+  "video": ""
+}
+
+
