@@ -1,0 +1,21 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2024-01-09",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+"code/demo20240112_1/src/ComparatorPersonByAge.java",
+"code/demo20240112_1/src/ComparatorPersonByHeight.java",
+"code/demo20240112_1/src/Main.java",
+"code/demo20240112_1/src/Person.java",
+"code/dz20240112_1/src/ComparatorStudentsByJobCenterProp.java",
+"code/dz20240112_1/src/ComparatorStudentsByLengthName.java",
+"code/dz20240112_1/src/ComparatorStudentsByMissedLessons.java",
+"code/dz20240112_1/src/Main.java",
+"code/dz20240112_1/src/Student.java"
+ ],
+  "video": ""
+}
+
+
