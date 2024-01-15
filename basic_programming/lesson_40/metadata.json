@@ -1,0 +1,26 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2024-01-09",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+"code/demo20240115_1/src/ComparatorStringByNameLength.java",
+"code/demo20240115_1/src/Main.java",
+"code/demo20240115_1/src/Person.java",
+"code/dz20240115_1/readme.txt",
+"code/dz20240115_1/src/Account.java",
+"code/dz20240115_1/src/ComparatorTransactionByAmount.java",
+"code/dz20240115_1/src/ComparatorTransactionByCurrencyCode.java",
+"code/dz20240115_1/src/CurrencyCode.java",
+"code/dz20240115_1/src/Main.java",
+"code/dz20240115_1/src/Person.java",
+"code/dz20240115_1/src/Transaction.java",
+"code/dz20240115_1/src/TransactionPredicate.java",
+"code/dz20240115_1/src/TransactionPredicateByCreditAccount.java",
+"code/dz20240115_1/src/TransactionPredicateByCurrency.java",
+"code/dz20240115_1/src/TransactionPredicateByDebitAccount.java" ],
+  "video": ""
+}
+
+
