@@ -3,8 +3,8 @@ import java.util.List;
 
 public class  MyArrayList<E>  implements MyList<E> {
 
-    Object[] array = new Object[10];
-    int size = 0;
+    private Object[] array = new Object[10];
+    private int size = 0;
 
     @Override
     public int size() {
