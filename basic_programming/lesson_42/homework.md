@@ -1,2 +1,2 @@
 #### 1.
-[ссылка](https://docs.google.com/document/d/1ORUhqw2s6fSNW8Mb8FvC6Vqj7x2UpB-cITdskwEh5AE/edit?usp=sharing)
+[ссылка](https://habr.com/ru/articles/337558/)
