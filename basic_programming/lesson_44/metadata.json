@@ -1,0 +1,22 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2024-01-17",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+"code/demo20240119_1/src/Main.java",
+"code/demo20240119_1/src/MyArrayList.java",
+"code/demo20240119_1/src/MyLinkedList.java",
+"code/demo20240119_1/src/MyList.java",
+"code/demo20240119_1/src/Temp.java",
+"code/dz20240119_1/src/ListCreator.java",
+"code/dz20240119_1/src/Main.java",
+"code/dz20240119_2/src/Main.java",
+"code/dz20240119_2/src/Person.java",
+"code/dz20240119_2/src/PersonFilter.java"
+ ],
+  "video": ""
+}
+
+
