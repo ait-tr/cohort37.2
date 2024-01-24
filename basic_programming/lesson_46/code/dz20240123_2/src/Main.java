@@ -31,7 +31,6 @@ public static List<Employee> getListForBonus(int n, List<Employee> employees){
 
         for (int i=0;
              i< sortedList.size() && (result.size()<n || result.get(result.size()-1).getExperience() == sortedList.get(i).getExperience())  ;i++){
-            Employee lastAddedEmployee = sortedList.get(i);
             result.add(sortedList.get(i));
 
         }
