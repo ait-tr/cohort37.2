@@ -53,7 +53,7 @@ public class Main {
                                     .map(a->new AccountWithClient(a,c)))
                 .collect(Collectors.toList());
 
-        
+
 
     }
 

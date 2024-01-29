@@ -5,11 +5,13 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-"code/demo20240126_1/src/Main.java",
-"code/dz20240126_1/src/Main.java",
-"code/dz20240126_2/src/Author.java",
-"code/dz20240126_2/src/Book.java",
-"code/dz20240126_2/src/Main.java" ],
+"code/demo20240129_1/src/BankAccount.java",
+"code/demo20240129_1/src/Client.java",
+"code/demo20240129_1/src/Main.java",
+"code/dz20240129_1/src/BankAccount.java",
+"code/dz20240129_1/src/Main.java",
+"code/dz20240129_1/src/Person.java"
+ ],
   "video": ""
 }
 
