@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html forms</title>
+</head>
+<body>
+    
+    <h1>Search</h1>
+    <!-- Значение атрибута action - ресурс куда уйдет запрос -->
+    <form action="https://www.google.com/search" method="get">
+        <!-- name в инпуте = название параметра запроса (query param)
+        значение - то что введет пользователь-->
+        <input type="text" name="q">
+        <button type="submit">Найти</button>
+        <button type="reset">Очистить</button>
+    </form>
+</body>
+</html>

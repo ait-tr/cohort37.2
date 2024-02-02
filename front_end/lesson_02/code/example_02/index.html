@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виды полей ввода</title>
+</head>
+<body>
+    <h1>Регистриция нового пользователя</h1>
+    <form action="">
+        <label for="name-input">Введите Имя:</label><br>
+        <input type="text" id="name-input" placeholder="Введите свое имя" name="name"><br>
+        <label for="email-input">Введите свой email:</label><br>
+        <input type="email" id="email-input" name="email" placeholder="@"><br>
+        <label for="password-input">Введите пароль</label><br>
+        <input type="password" id="password-input" name="password"><br>
+        <label for="date-input">Ваша дата рождения:</label><br>
+        <input type="date" id="date-input" name="date-birth"><br>
+        <label for="tel-input">Номер телефона:</label><br>
+        <input type="tel" id="tel-input" name="tel"><br><br>
+
+        <fieldset>
+        <input type="checkbox" id="newsletter-input" name="newsletter" checked>
+        <label for="newsletter-input">Получать информацию о скидках</label>
+        </fieldset>
+
+        <!-- Пример блочного и строчного элемента -->
+        <p style="background-color: red;">Выберите Ваш пол:</p>
+        <a style="background-color: grey;" href="/">На главную</a>
+    
+        <label for="man">Mужчина</label>
+        <input type="radio" id="man" name="gender" value="man">
+        <label for="woman">Женщина</label>
+        <input type="radio" id="woman" name="gender" value="woman">
+        <label for="child">Ребенок</label>
+        <input type="radio" id="child" name="gender" value="child">
+        <br>
+
+        <label for="age-input">Выберите Ваш возраст:</label>
+        <select name="age" id="age-input">
+            <option value="1525" selected>15-25</option>
+            <option value="25-45">25-45</option>
+            <option value="100" disabled>45-120</option>
+        </select>
+
+
+        <p></p>
+        <label for="file-input"></label>
+        <input type="file" id="file-input" name="file">
+        <br>
+        <br>
+
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+
+
+
+    </form>
+</body>
+</html>
