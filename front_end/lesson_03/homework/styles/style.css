@@ -1,8 +1,8 @@
-header{
+.header{
     background-color: red;
     height: 100px;
 }
-#title1{
+.title1{
     size: 24px;
     color: aliceblue;
 } 
