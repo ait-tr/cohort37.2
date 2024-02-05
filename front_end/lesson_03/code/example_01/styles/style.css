@@ -1,0 +1,29 @@
+* {
+    color: #00000033;
+}
+#header2 {
+    color: brown;
+}
+h1 {
+    color: lightcoral;
+    font-size: 1rem;
+}
+
+.headers {
+    color: blue;
+}
+
+.header_alternative {
+    color: black;
+}
+
+.container .parag {
+    color: green;
+}
+
+div {
+    background-color: darkgrey;
+}
+.header4 {
+    font-size: 36px;
+}
