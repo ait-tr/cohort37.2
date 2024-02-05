@@ -2,7 +2,19 @@ header{
     background-color: red;
     height: 100px;
 }
-h1{
+#title1{
     size: 24px;
     color: aliceblue;
 } 
+.container1{
+    background-color: blue;
+    color: aliceblue;
+    size: 18px;
+    height: 300px;
+}
+.container2{
+    background-color: green;
+    color: aliceblue;
+    size: 18px;
+    height: 100px;
+}
