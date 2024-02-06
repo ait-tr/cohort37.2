@@ -1,0 +1,25 @@
+
+.container {
+    color: aliceblue;
+    background-color:burlywood;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    top: 0;
+}
+.main {
+    color: aliceblue;
+    background-color: blueviolet;
+    height:calc(100vh - 340px);
+    text-align: center;
+    margin: 10px;
+
+}
+.footer {
+    color: aliceblue;
+    background-color:burlywood;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    bottom: 0;
+}

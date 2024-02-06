@@ -1,0 +1,15 @@
+.button {
+    height: 70px;
+    background-color:black;
+    color:aliceblue;
+    margin: 100px 0;
+    text-align: center;
+}
+.button1 {
+    height: 85%;
+    width: 85%;
+    background-color: blue;
+    color: aliceblue;
+    border: radius 100px;
+    border-radius: 10%;
+}
