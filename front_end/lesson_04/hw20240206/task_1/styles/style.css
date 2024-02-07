@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    text-align: center;
+    
+}
+header{
+    background-color: bisque;
+    height: 150px;
+    margin-bottom: 10px;
+}
+main{
+    
+    background-color: aquamarine;
+    height: calc(100vh - 320px);
+    border-bottom:10px white ;
+    margin-bottom: 10px;
+}
+footer{
+
+    background-color: bisque;
+    height: 150px;
+    width: 100%;
+}

@@ -1,0 +1,20 @@
+*{
+    margin:0;
+}
+.parent{
+background: linear-gradient(aqua, magenta);
+height: 350px;
+width: 200px;
+margin: 20px;
+border: solid 2px;
+position: relative;
+border-color: black;
+border-radius: 5px;
+}
+.child{
+background-color: white;
+width: 30px;
+font-size: 20px;
+position: absolute;
+right:0px;
+}
