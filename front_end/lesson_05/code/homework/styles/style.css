@@ -1,11 +1,11 @@
 .main_block {
-    height: 350px;
-    width: 250px;
+    height: 500px;
+    width: 300px;
     background:linear-gradient(white,black);
     border: 2px solid;
     border: color #000;;
     border-radius: 5px;
-    position: absolute;
+    position: relative;
     
 }
 .yelliw_block {
