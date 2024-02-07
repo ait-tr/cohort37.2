@@ -1,0 +1,6 @@
+.bgimg {
+    width: 1200px;
+    height: 734px;
+    background-image: url("../images/cats.jpg");
+    background-repeat: repeat-y;
+}

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.position-static {
+    height: 200px;
+    width: 200px;
+    background-color: bisque;
+}
+
+.position-relative {
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    left: 50px;
+    bottom: 50px;
+}
+
+.position-absolute {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+.position-4 {
+    height: 200px;
+    width: 200px;
+    background-color: lightgrey;
+    margin-bottom: 1500px;
+}
+
+.last-position-fixed {
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    bottom: 10px;
+    right: 10px;
+}
+
+.header-position-sticky {
+    height: 50px;
+    background-color: aquamarine;
+    position: sticky;
+    top: 0;
+}
