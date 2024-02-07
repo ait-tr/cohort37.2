@@ -1,0 +1,59 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+.position-static {
+    height: 200px;
+    width: 200px;
+    background-color: bisque;
+}
+.position-relative{
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    position: relative;
+    left: 50px;
+    top: 50px;
+    /* z-index: 20; */
+}
+.position-absolut {
+    height: 200px;
+    width: 200px;
+    background-color:blue;
+    position: absolute;
+    /* bottom: 50px; */
+    top: 20px;
+    left: 50px;
+    /* z-index: 10; */
+    /* margin-top: 100px; */
+}
+.position-4 {
+    height: 200px;
+    width: 200px;
+    background-color: lightgray;
+    position: relative;
+    margin-bottom: 1500px;
+    /* z-index: 30; */
+}
+.last-position-fixed {
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    /* z-index: -1; */
+}
+.header-position-sticky {
+    height: 50px;
+    width: 800px;
+    background-color: aquamarine;
+    position: sticky;
+    top: 0;
+}
+.button {
+    background-color: black;
+    color: aliceblue;
+    position: absolute;
+    right: 0;
+}

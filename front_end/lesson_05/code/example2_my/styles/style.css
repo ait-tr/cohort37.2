@@ -1,0 +1,9 @@
+.bgimg {
+    width: 300px;
+    height: 200px;
+    background-color: bisque;
+    background-image: url("../images/cat.jpeg");
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+}
