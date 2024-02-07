@@ -1,0 +1,19 @@
+.gradient {
+    height: 300px;
+    width: 200px;
+    background-image: linear-gradient(white,black);
+    position: relative;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 5px;
+
+}
+.text {
+    width: 30px;
+    height: 20px;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
