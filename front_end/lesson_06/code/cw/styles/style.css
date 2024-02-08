@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    background-color: rgba(128, 128, 128, 0.506);
+}
+
+.grandparent{
+    height:50px;
+background-color: slategray;
+justify-content: center;
+display: flex;
+opacity: 0.8;
+
+}
+
+.parent{
+height: 50px;
+display: flex;
+flex-direction: row;
+background-color: slategray;
+justify-content: center;
+align-content: center; 
+gap: 15px;
+
+max-width: 750px;
+      
+}
+
+.child{
+width:150px;
+opacity: 1;
+font-size:20px;
+background-color: slategray;
+border-radius: 10px;
+color: white;
+border-color: transparent;
+
+}
