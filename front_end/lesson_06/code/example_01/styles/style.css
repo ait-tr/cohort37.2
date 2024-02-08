@@ -1,0 +1,32 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex-container {
+    height: 800px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+     justify-content: center; 
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+    align-items: flex-start; 
+    /* align-items: center; */
+    /* align-items: flex-end; */
+    flex-wrap: wrap;
+    align-content: start;
+    row-gap: 50px;
+
+}
+.flex-item {
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    font-size: 48px;
+    border: 1px solid coral;
+    /* display: none; */
+}

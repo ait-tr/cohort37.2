@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.display {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(11, 11, 11); 
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item {
+font-size: 13px;
+color: beige;
+border: 1px;
+
+}
+.display1 {
+    justify-content: center;
+    display: flex;
+    background-color: chartreuse;
+}
+.logo {
+    height: 100%; 
+/* margin: 30px; */
+}
+.logo-wrapper {
+    height: 50%;
+    background-color: aqua;
+    margin: 0 auto;
+    min-width: 50px;
+
+}
