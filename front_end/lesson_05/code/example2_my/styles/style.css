@@ -3,7 +3,10 @@
     height: 200px;
     background-color: bisque;
     background-image: url("../images/cat.jpeg");
+    /* background-size: contain; */
+    background-size: cover;
     background-repeat: no-repeat;
     /* background-repeat: repeat-x; */
     /* background-repeat: repeat-y; */
+    background-position: center;
 }
