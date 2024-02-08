@@ -17,7 +17,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     align-content: start;
-row-gap: 50px;
+    row-gap: 50px;
 
 
 }
@@ -27,7 +27,7 @@ row-gap: 50px;
     font-size:48 px;
     border: 2px solid;
     background-color: orange;
-font: arial;
+    font: arial;
 }
 #logo{
     position:absolute;
