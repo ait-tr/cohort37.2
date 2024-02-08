@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    /* height: 200px; */
+    height: 800px;
+    background-color: bisque;
+    display: flex;
+    /* указываем направление главной оси
+    все внутренние элементы (flex items в нашем случае)
+    выстраиваются в ряд (row) */
+    flex-direction: row;
+    /* указываем направление для главной оси column - 
+    выстраиваются в столбик
+    */
+    /* flex-direction: column; */
+
+
+    /* можно указывать еще column-reverse & row-reverse
+    для обратного порядка flex-items
+    */
+
+    /* свободное пространство между flex items */
+    /* gap: 200px; */
+
+    /* justify-content - выравнивание по основной оси
+    если flex-direction: row - то по горизонтали
+    flex-direction: column - по вертикали
+    */
+    /* justify-content: center; */
+    justify-content: center; 
+    /* justify-content: space-around; */
+    /* justify-content:space-evenly; */
+
+
+
+    /* Выравнивание по перекрестной оси */
+    align-items: flex-start;
+    /* align-items: center; */
+    /* align-items: end; */
+    /* align-items: stretch; */
+
+
+    /* перенос flex items на следующую строку */
+
+    flex-wrap: wrap;
+
+
+    align-content: start;
+
+    row-gap: 50px;
+
+
+    
+}
+
+.flex-item {
+    height: 200px;
+    background-color: lightgreen;
+    /* width: 200px; */
+    font-size: 48px;
+    border: 1px solid blue;
+}
