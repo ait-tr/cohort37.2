@@ -2,5 +2,12 @@
     width: 1200px;
     height: 734px;
     background-image: url("../images/cats.jpg");
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-color: aqua;
+    background-size: cover;
+    /* заполняет всё поле, возможна потеря */
+    /* background-size: contain; меняет размер рисунка 
+    что бы одна из пар сторон подходило по размеру поля */
+    background-position: center;
+
 }
