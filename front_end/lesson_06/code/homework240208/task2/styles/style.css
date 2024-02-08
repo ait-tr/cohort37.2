@@ -1,0 +1,51 @@
+.top {
+    background-color: aqua;
+    height: 120px;
+    margin: 5px;
+    border-radius: 3%;
+}
+.navi {
+    background-color: lightpink;
+    height: 65px;
+    margin: 5px;
+    border-radius: 3%;
+}
+.bottom {
+    background-color: lightgreen;
+    height: 120px;
+    margin: 5px;
+    border-radius: 3%;
+}
+.container {
+    height: calc(100vh - 280px);
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.left {
+    width: 65%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.rigth {
+    background-color: lightgoldenrodyellow;
+    width: 35%;
+    height: auto;
+    margin: 5px;
+    border-radius: 3%;
+}
+.top-left {
+    background-color:greenyellow;
+    height: 50%;
+    margin: 5px;
+    border-radius: 3%;
+
+}
+.bottom-left {
+    background-color: fuchsia;
+    height:50%;
+    margin: 5px;
+    border-radius: 3%;
+
+}
