@@ -50,6 +50,7 @@
     background-color: cornsilk;
     margin: 0 5px;
     flex-grow: 1;
+    flex-basis: 50%;
 }
 
 .div-container3{
