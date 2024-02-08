@@ -1,41 +1,42 @@
 .main_box{
-    width: 500px;
-    height: 800px;
-    border: solid 2px;
-    border-radius: 10px;
-    margin: 100px;
+    width: 100%;
+    height: calc(100vh - 280px);
     text-align: center;
     font-size: 20px;
-}    
-header{
-    background-color: slategray;
-    height: 100px;
+   
+}
+
+.static_bar{
     margin:2px;
     border-radius: 5px;
     border: solid 2px;
+    display:flex;
+}
 
+header{
+    background-color: slategray;
+    height: 100px;
 }
 nav{
     background-color: lightblue;
     height: 50px;
-    margin:2px;
-    border-radius: 5px;
-    border: solid 2px;
-    
 }
-
+footer{
+    background-color: aquamarine;
+    height: 100px;
+    position: sticky;
+}
 
 
 .main_content{
     display: flex;
-    height: calc(800px - 272px);
-
+    height: 100%;
 }
 .left_column{
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
-
+ 
 }
 section{
     background-color: yellowgreen;
@@ -43,6 +44,7 @@ section{
     border-radius: 5px;
     border: solid 2px;
     height:50%;
+    
 
 }
 article{
@@ -59,28 +61,15 @@ article{
 .right_column{
     display: flex;
     flex-basis: 50%;
-    
+    margin:2px;
+    border-radius: 5px;
+    border: solid 2px;
 
 }
 aside{
-    background-color: orange;
-    margin:2px;
-    border-radius: 5px;
-    border: solid 2px;
-    height: fit-content;
-    height: 98.5%;
-
+    background-color: orange;    
 }
 
-
-footer{
-    background-color: aquamarine;
-    height: 100px;
-    margin:2px;
-    border-radius: 5px;
-    border: solid 2px;
-
-}
 
 
 
