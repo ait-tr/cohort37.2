@@ -1,13 +1,6 @@
 .bgimg {
-    width: 1200px;
+    width: 50%;
     height: 734px;
     background-image: url("../images/cats.jpg");
-    background-repeat: no-repeat;
-    background-color: aqua;
-    background-size: cover;
-    /* заполняет всё поле, возможна потеря */
-    /* background-size: contain; меняет размер рисунка 
-    что бы одна из пар сторон подходило по размеру поля */
-    background-position: center;
-
+    background-repeat: repeat-y;
 }
