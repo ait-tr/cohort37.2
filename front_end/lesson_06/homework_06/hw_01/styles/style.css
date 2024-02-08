@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.block{
+    flex-direction: column;
+    height: 300px;
+}
+
+.block_red{
+    background-color: red;
+    flex-basis: 20%;
+}
+
+.block_green{
+    background-color: green;
+    flex-basis: 20%;
+}
+
+.block_blue{
+    background-color: blue;
+    flex-basis: 20%;
+}
+
+.block_yellow{
+    background-color: yellow;
+    flex-basis: 20%;
+}
+
+.block_black{
+    background-color: black;
+    flex-basis: 20%;
+}
