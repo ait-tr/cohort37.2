@@ -4,6 +4,12 @@
   "homework": "homework.md",
   "code": [
     "./code/example_01/index.html",
-    "./code/example_01/styles/style.css"
+    "./code/example_01/styles/style.css",
+    "./code/example_02/index.html",
+    "./code/example_02/styles/style.css",
+    "./code/example_03/index.html",
+    "./code/example_03/styles/style.css",
+    "./code/example_04/index.html",
+    "./code/example_05/styles/style.css"
   ]
 }
