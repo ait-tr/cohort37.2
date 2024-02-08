@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex-container{
+    background-color: slategray;
+    height: 800px;
+    display: flex;                    /* даёт доп.свойства контейнеру */
+    flex-direction: row;              /* row, column */
+    /* gap: 10px;                      задаёт промежуток между элементами */
+    
+    justify-content: center;   /* растягивает контент и оставляет ровное просторанство между ними*/
+    /* justify-content: center;         выравнивает контент по центру */
+    /* justify-content: space-around; /* растягивает контент и оставляет ровное просторанство между ними и по бокам */
+    /* justify-content: evenly; */
+    /* align-items: flex-start; */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: start;
+row-gap: 50px;
+
+
+}
+.flex-item{
+    height: 200px;
+    width: 200px;
+    font-size:48 px;
+    border: 2px solid;
+    background-color: orange;
+font: arial;
+}
+#logo{
+    position:absolute;
+    right:0;
+}
