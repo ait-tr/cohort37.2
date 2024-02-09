@@ -1,0 +1,77 @@
+* {
+border-radius: 5px;
+
+}
+.container {
+height: 300px;
+width: 100%;
+background-color: blanchedalmond;
+display: flex;
+gap: 10px;
+
+}
+.item {
+position: relative;
+height: 300px;
+width: 400px;
+background-color: black;
+}
+
+.element {
+position: absolute;
+height: 20px;
+width: 40px;
+top: 3px;
+right: 3px;
+background-color: yellow;
+
+}
+.background1 {
+background-image: url("../img/1-1.webp");
+background-size: cover;
+}
+.background2 {
+background-image: url("../img/green-mile.webp");
+background-size: cover;
+}
+.background3 {
+background-image: url("../img/run.webp");
+background-size: cover;
+} 
+.wrap {
+display: flex;
+position: absolute;
+flex-direction: column;
+bottom: 0;
+height: 45%;
+width: 100%;
+background: linear-gradient(#66000000, #000000);
+} 
+.year {
+padding: 5px;
+font-size: 28px;
+color: white;
+font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}  
+.title {
+padding: 5px;
+font-size: 18px;
+color: yellow;
+font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.teaser {
+padding: 5px;
+ font-size: 11px;
+ color: white;   
+ display: -webkit-box;
+ -webkit-line-clamp: 3; 
+ -webkit-box-orient: vertical;
+ overflow: hidden;
+ font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
