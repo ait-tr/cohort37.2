@@ -1,0 +1,31 @@
+
+.container{
+    flex-direction: row;
+    display: flex; 
+}
+
+.block_red {
+    height: 300px;
+    width: 20%;
+background-color: red;
+}
+.block_green {
+    height: 300px;
+    width: 20%;
+background-color: green;
+}
+.block_blue {
+    height: 300px;
+    width: 20%;
+background-color: blue;
+}
+.block_yellow {
+    height: 300px;
+    width: 20%;
+background-color: yellow;
+}
+.block_black {
+    height: 300px;
+    width: 20%;
+background-color: black;
+}
