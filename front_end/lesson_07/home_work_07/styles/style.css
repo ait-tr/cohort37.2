@@ -1,0 +1,44 @@
+* {margin: 0;
+    padding: 0;
+    font-family: "Fira Sans", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    
+}
+
+.flex-container { 
+    padding: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    margin: 0 auto;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+.item {
+   font-size: 14px; 
+    color: black;
+   padding: 10px;
+}
+.grow {
+    flex-grow: 1;
+    padding: 0;
+}
+
+.image {
+    height: 37px;
+    display: block;
+  margin: 0 auto;
+
+    
+    margin-left: auto;
+    margin-right: auto 
+   
+}
+.align {
+    margin-left: auto;
+    margin-right: auto;
+}
