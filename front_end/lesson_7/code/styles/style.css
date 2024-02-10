@@ -3,7 +3,7 @@ border-radius: 3px;
 
 }
 .container {
-height: 300px;
+height: 400px;
 width: 100%;
 display: flex;
 gap: 10px;
@@ -12,7 +12,7 @@ justify-content: space-between;
 .item {
 position: relative;
 height: 400px;
-width: 400px;
+width: 300px;
 background-color: black;
 }
 
@@ -28,9 +28,11 @@ background-color: yellow;
 font-size: 10px;
 color: black;
 font-family: "Fira Sans", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
+  text-transform: uppercase;
 }
+
 .background1 {
 background-image: url("../img/1-1.webp");
 background-size: cover;
@@ -53,25 +55,25 @@ width: 100%;
 background: linear-gradient(#66000000, #000000);
 } 
 .year {
-padding: 5px;
+padding: 0 5px;
 font-size: 28px;
 color: white;
 font-family: "Fira Sans", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
 }  
 .title {
-padding: 5px;
-font-size: 18px;
+padding: 0 5px;
+font-size: 24px;
 color: yellow;
 font-family: "Fira Sans", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  
+font-weight: 600;
+font-style: normal;
+text-transform: uppercase;  
 }
 .teaser {
 padding: 5px;
- font-size: 11px;
+font-size: 12px;
  color: white;   
  display: -webkit-box;
  -webkit-line-clamp: 3; 
