@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    height: 50px;
+    gap: 40px; 
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right, rgba(128, 128, 128, 0.413), slategray);
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+   
+}
+
+.item{
+    font-size: larger;
+    background-color: transparent;
+    height: auto;
+    width: auto;
+    border: 0;
+    font-weight: 500;
+    
+}
+.item:hover{
+    border: solid 2px rgba(112, 128, 144, 0.232);
+
+}
+
+.logo_wrapper{
+   display: flex;
+   flex-grow: 1;
+   align-items: center;
+   width: 100px;
+
+   
+}
+.logo{
+    height: 50px;
+}
