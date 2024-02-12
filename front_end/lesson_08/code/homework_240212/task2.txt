@@ -1,0 +1,38 @@
+
+Задание 2. Операторы сравнения
+
+const a = 17;
+const b = 5;
+a > b;
+a <= b;
+a == b;
+a != b;
+
+'a' < 'b';
+'ab' > 'a';
+
+
+'17' > 1;
+
+17 === 1;
+17 === 17;
+17 === '17';
+17 === true;
+'0' === '';
+true === false;
+true === true;
+null === undefined;
+false === 0;
+
+17 == '17';
+'0' == '';
+0 == '';
+null == undefined;
+false == 0;
+
+undefined == null;
+undefined == 0;
+null == 0;
+undefined < 0;
+undefined > 0;
+Выведите в консоль результаты этих выражений. Изучите результаты.
