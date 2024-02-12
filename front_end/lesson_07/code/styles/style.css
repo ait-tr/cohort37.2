@@ -28,7 +28,7 @@ body {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.907);
 }
 
 .genre {
@@ -45,7 +45,7 @@ body {
     bottom: 0;
     left: 0;
     
-    background-color:  rgba(69, 69, 69, 0.241);
+    background-color:  rgba(11, 10, 10, 0.902);
     padding: 10px;
     color: white;
     width: 100%;
