@@ -1,0 +1,76 @@
+.banner-row{
+    /* height: 400px; */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.banner-size{
+    background-size: cover;
+    /* position: relative; */
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 10px;
+    flex-basis: 100%;
+}
+
+.genre{
+    background-color: yellow;
+    width: 50px;
+    text-align: center;
+    align-self:flex-end;
+    position: absolute;
+    top: 10px;
+    border: 1px;
+    border-radius: 3px;
+    position: absolute;
+}
+
+.banner1{
+    position: fixed;
+}
+
+.content{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.img{
+    z-index: -2;
+    border: purple solid 2px;
+    display: flex;
+    height: 100%;
+    
+}
+
+.button{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.titel{
+    /* font-size: 24px; */
+    text-align: left;
+    color: yellow;
+    font-weight: 1000px;
+}
+
+.date{
+    text-align: left;
+    color: white;
+    /* font-size: 40px; */
+}
+
+.description{
+    text-align: left;
+    color: white;
+    /* font-size: 16px; */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    z-index: 100;
+}
