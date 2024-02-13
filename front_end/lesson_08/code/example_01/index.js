@@ -128,7 +128,12 @@ console.log(3 === "3"); // false
 console.log(3 === 3); // true
 console.log("3" === "3"); //true
 
-
-
 //
 console.log(3 == 3);
+
+// to false-> "", 0, NaN, null, undefined
+console.log(Boolean(""));
+console.log(Boolean(0));
+console.log(Boolean(NaN));
+console.log(Boolean(null));
+console.log(Boolean(undefined));
