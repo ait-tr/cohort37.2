@@ -41,6 +41,22 @@ console.log("d=" +d);
 console.log("e=" +e);
 
 //Итак, самое длинное научное название: метилпропенилендигидроксициннаменилакрилическая  кислота.
-const sentence = "метилпропенилендигидроксициннаменилакрилическая  кислота";
-const tempVar = sentence.split("  ");
-console.log(tempVar);
+const sentence = "Итак, самое длинное научное название: метилпропенилендигидроксициннаменилакрилическая  кислота.";
+
+let newSentences = '';
+
+for(let i = 0; i < sentence.length; i++){
+    if(sentence[i] !==  "," && sentence[i] !==  ":" && sentence[i] !==  "." ){
+        newSentences += sentence[i];
+    }
+}
+ console.log(newSentences);
+
+ const newArray = newSentences.split(" ");
+
+ for(let i = 0; i < newArray.length; i++){
+  console.log(newArray[i]);
+ }
+
+ 
+
