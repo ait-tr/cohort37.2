@@ -3,6 +3,7 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "./code/example_01/index.js"
+    "./code/example_01/index.js",
+    "./code/example_02/index.js"
   ]
 }
