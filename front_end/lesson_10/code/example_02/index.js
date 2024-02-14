@@ -44,5 +44,13 @@ const hello = (str, f) => {
 console.log(str2);
 
 const str2 = hello("Kate", (str) => {
-    return Hello ${str}
-});
+    return `Привет ${str}`});
+
+/////
+const a = "слово-1"
+const b = "слово-b"
+const c = "слово-c"
+const d = "слово-d"
+
+console.log("это у нас " + a + ", а это " + b + ", а это " + c);
+console.log(`это у нас ${a}, а это ${b}, а это ${c}`)
