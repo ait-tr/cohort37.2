@@ -2,10 +2,10 @@ function number(num){
     num = Math.floor(num);
 
     if(num % 2 === 0){
-        console.log("even");
+        return"even";
     } else {
-        console.log("odd");
+        return"odd";
     }
 }
 
-number(4.1);
+console.log(number(4.1));
