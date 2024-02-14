@@ -13,7 +13,7 @@ console.log("sum of max and min: ")
 console.log(maxValue+minValue);
 
 //Вырезать первый элемент и добавить его в конец массива.
-const firstNumb = numbers.shift(Math.ceil((Math.random())*100))
+const firstNumb = numbers.shift();
 numbers.push(firstNumb);
 console.log(firstNumb + "; " + numbers);
 
