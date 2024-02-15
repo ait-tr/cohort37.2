@@ -12,8 +12,7 @@ const square = a => {
 const roundA = Math.floor(a);
 return roundA * roundA;
 };
-const squareRes = square(4.5);
-console.log(squareRes);
+console.log(square(4.5));
 
 
 // Task3:
@@ -35,3 +34,21 @@ console.log(sumEven(2, 8.7));
 
 // Task4:
 
+function prime(num) {
+    if (num <= 1) return false;
+    for (let i = 2; i < num; i++){
+        if(num % i ===0) return false;
+        }
+        return true;
+    }
+
+function findPrime(n) {
+    const primes = [];
+    for (let num = 2; num <= n; num++) {
+        if (prime(num)) {
+            primes.push(num);
+        }
+    }
+    return primes;
+}
+console.log(findPrime(17));
