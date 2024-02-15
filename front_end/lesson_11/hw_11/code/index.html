@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <h3 id="header">Онлайн калькулятор индекса массы тела (BMI)</h3>
+    <div id="Menu">
+            <div class="form-item">
+                <label for="height">Рост (в метрах):</label>
+                <input type="number" id="height" required>
+            </div>
+            <div class="form-item">
+                <label for="weight">Вес (в килограммах):</label>
+                <input type="number" id="weight" required>
+            </div>
+            <button type="submit">Рассчитать</button>
+            <p></p>
+        <div id="Result">Ваш индекс массы тела: </div>
+        <div id="Status">Статус:</div>
+    </div>
+</body>
+</html>
