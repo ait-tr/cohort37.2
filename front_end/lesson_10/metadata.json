@@ -4,8 +4,6 @@
   "homework": "homework.md",
   "code": [
     "./code/example_01/index.js",
-    "./code/example_02/index.js",
-    "./code/example_03/index.js",
-    "./code/example_04/index.js"
+    "./code/example_02/index.js"
   ]
 }

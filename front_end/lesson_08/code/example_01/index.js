@@ -114,7 +114,7 @@ let bi = 1257n;
 
 // console.log(true == "1");
 
-console.log(true == "1"); // true
+// console.log(true == "1"); // true
 
 
 // true -> "true" // not like this
@@ -122,16 +122,25 @@ console.log(true == "1"); // true
 // true -> 1 -> "1" // this way = console.log("1" == "true");
 
 
-console.log(3 == "3"); // true
+// console.log(3 == "3"); // true
 
-console.log(3 === "3"); // false
-console.log(3 === 3); // true
-console.log("3" === "3"); //true
+// console.log(3 === "3"); // false
+// console.log(3 === 3); // true
+// console.log("3" === "3"); //true
 
 //
+<<<<<<< HEAD
 console.log(3 == 3);
 
 // to false-> "", 0, NaN, null, undefined
+=======
+// console.log(3 == 3);
+
+
+
+
+// to false -> "", 0, NaN, null, undefined
+>>>>>>> 7899c183c540671f547497a271bd07fc5852b1e1
 console.log(Boolean(""));
 console.log(Boolean(0));
 console.log(Boolean(NaN));
