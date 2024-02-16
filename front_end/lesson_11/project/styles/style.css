@@ -24,7 +24,8 @@ body {
     background: linear-gradient(white, 95%, rgb(223, 219, 219));
     opacity: .93;
     border-radius: 6px;
-    margin: 100px auto;
+    margin-top: 100px;
+    margin-left: 50vh;
    
     
 }
@@ -77,6 +78,21 @@ input {
     align-items: center;
    
     
+  }
+
+  .output{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 8px;
+    justify-content: space-evenly;
+    
+  }
+
+  .plaseholder_result{
+    color: gray;
+    padding: 5px ;
+    font-size: 9px;
   }
 
 

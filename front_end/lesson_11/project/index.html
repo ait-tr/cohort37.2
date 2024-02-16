@@ -6,7 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles/style.css">    
+<link rel="stylesheet" href="./styles/style.css">  
+<script src="./scripts/index.js" defer></script>
 <title>Body mass index</title>
 </head>
 <body>
@@ -15,8 +16,8 @@
    <h1>Body mass index</h1>      
 
     <div class="box">
-    <input type="text" name="Hight" placeholder="Your hight (cm)">
-    <input type="text"name="Weight" placeholder="Your weight (kg)">
+    <input type="text" name="Height" placeholder="Your height (cm)" id="heightInput">
+    <input type="text"name="Weight" placeholder="Your weight (kg)" id="weighInput">
     </div>
 
 <div class="button box">
@@ -24,8 +25,17 @@
 </div>
 
 <div class="result">
-    <input type="text" name="current" placeholder="Current BMI">
-    <input type="text"name="stage" placeholder="Compliance">
+    <!-- <input type="text" name="current" placeholder="Current BMI">
+        <input type="text"name="stage" placeholder="Compliance"> -->
+        <div class="output">
+            <div class="output-box">
+                <p class="plaseholder_result">BMI:</p>
+                <div class="inner_output" id="result1"></div>
+            </div>
+            <div class="output-box">
+                <p class="plaseholder_result">Result:</p>
+                <div class="inner_output" id="result2"></div>
+            </div>
     </div>
 </div>
 </div>
