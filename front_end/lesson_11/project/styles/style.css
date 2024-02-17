@@ -82,10 +82,10 @@ input {
 
   .output{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 10px;
-    gap: 8px;
-    justify-content: space-evenly;
+    gap: 80px;
+    justify-content: space-between;
     
   }
 
