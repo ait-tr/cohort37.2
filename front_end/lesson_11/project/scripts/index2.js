@@ -3,25 +3,28 @@ const inputWeightElement = document.querySelector('#weighInput');
 const calculateButtonElemnt = document.querySelector('.button');
 const bmiOutput = document.querySelector('#result1');
 const resultOutput = document.querySelector('#result2');
-
 let userHeightInput;
 let userWeightInput;
-
-
 const heightFieldInput = (evt) => {
-    if (typeof heightFieldInput !== "number") {
-        alert("Numbers only");
-    }
+    // if (notANumber) {
+    //     alert("Numbers only");
+    // }
     userHeightInput = evt.target.value;
-}
-
-const weightFieldInput = (evt) => {
-    if (typeof weightFieldInput !== "number") {
-        alert("Numbers only");
+    if (evt.target.value<=220) {
+    } else {
+        alert("Numbers only")
     }
-    userWeightInput = evt.target.value;
 }
-
+const weightFieldInput = (evt) => {
+    // if (notANumber) {
+    //     alert("Numbers only");
+    // }
+    userWeightInput = evt.target.value;
+    if (evt.target.value<=220) {
+    } else {
+        alert("Numbers only")
+    }
+}
 const submitButtonHandler = () => {
     let bmi = Math.round(userWeightInput / ((userHeightInput / 100) ** 2));
     bmiOutput.textContent = bmi;
@@ -32,13 +35,18 @@ const submitButtonHandler = () => {
     if (bmi < 18) {
         result = "Underweight ";
     }
-    if (bmi >= 25) {
+    if (result > 25) {
         result = "Overweight";
     }
     resultOutput.textContent = result;
 }
-
-
+const notANumber = () => {
+    if (value === NaN) {
+        return true;
+    } else {
+        return false;
+    }
+}
 inputHeightElement.addEventListener('input', heightFieldInput);
 inputWeightElement.addEventListener('input', weightFieldInput);
 calculateButtonElemnt.addEventListener('click', submitButtonHandler);
