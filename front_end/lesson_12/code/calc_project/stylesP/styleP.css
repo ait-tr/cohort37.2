@@ -15,9 +15,13 @@ body {
     background-color: #9c9797; 
     padding: 50px;
     border-radius: 15px;
-    box-shadow: 19px 12px 30px 11px indianred/* https://webcode.tools/css-generator/box-shadow#google_vignette */
+    box-shadow: 19px 12px 30px 11px #a81515;/* https://webcode.tools/css-generator/box-shadow#google_vignette */
 }
+/* .form-group{
+    background-color: grey;
+} */
 
+/* Стили для формы и группы элементов */
 #bmi-form {
     max-width: 300px; /* Максимальная ширина формы */
     margin: 50 ; /* Центрирование формы */
@@ -32,25 +36,23 @@ label {
     margin-bottom: 3px; 
 }
 
-input.number {
+input[type="number"] {
     width: 100%; 
     padding: 10px; 
     border: none;
-    border-radius: 5px;
     background-color: aliceblue;
 }
 
-button {
+button[type="submit"] {
     padding: 10px 20px; 
-    background-color: indianred; 
+    background-color: #1d70c9; 
     color: black; 
     border: none; 
-    border-radius: 5px;
     cursor: pointer; 
     display: block; 
     width: 100%; 
 }
 
 button[type="submit"]:hover {
-    background-color: rgb(109, 124, 125); ; /* Изменение цвета фона кнопки при наведении */
+    background-color: rgb(60, 187, 196); ; /* Изменение цвета фона кнопки при наведении */
 }
