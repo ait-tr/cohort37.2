@@ -1,21 +1,48 @@
+const listItemTwoElement = document.querySelector('#second-item');
+//document.getElementById('second-item');
 
 
-const secondItemElem = document.querySelector('#second-item');
+// console.log(listItemTwoElement);
 
 
-// console.log(secondItemElem);
+// listItemTwoElement.style.backgroundColor = 'blue';
 
+// listItemTwoElement.classList.add('list-item_done');
 
-
-// console.log(document);
-
-
-
-// console.log(secondItemElem.innerHTML);
-
-const secondItemElemClick = () => {
-    secondItemElem.classList.toggle('list-item_done'); //add / remove / toggle
-    // secondItemElem.style.backgroundColor = 'blue';
+const listItemTwoHandler = () => {
+    listItemTwoElement.classList.toggle('list-item_done');
 }
 
-secondItemElem.addEventListener('click', secondItemElemClick);
+listItemTwoElement.addEventListener('click', listItemTwoHandler);
+
+const inputElement = document.querySelector('.task-input');
+const createButton = document.querySelector('.btn');
+let userInputText;
+
+const createButtonHandler = () => {
+    const newListItem = document.createElement('li');
+    newListItem.classList.add('list-item');
+    newListItem.textContent = userInputText;
+    const listAllElements = document.querySelector('.list');
+    listAllElements.append(newListItem);
+}
+
+createButton.addEventListener('click', createButtonHandler);
+
+// const str = 'word';
+// console.log(`My favourite word is "${str}"`);
+
+const inputHandler = () => {
+    // console.log(evt);
+    // userInputText = evt.target.value;
+    userInputText = inputElement.value;
+
+}
+
+inputElement.addEventListener('input', inputHandler);
+
+//
+const btnHandler = (evt) => {
+    evt.preventDefault();
+
+}
