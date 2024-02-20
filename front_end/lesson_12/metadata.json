@@ -2,6 +2,8 @@
   "plan": "plan.md",
   "homework": "homework.md",
   "code": [
-    "./code/example_01/index.js"
+    "./code/example_01/index.html",
+    "./code/example_01/scripts.index.js",
+    "./code/example_01/styles/style.css"
   ]
 }

@@ -1,0 +1,7 @@
+{
+  "plan": "plan.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/example_01/index.js"
+  ]
+}
