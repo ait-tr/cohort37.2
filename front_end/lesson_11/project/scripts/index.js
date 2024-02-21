@@ -9,17 +9,19 @@ let userWeightInput;
 
 
 const heightFieldInput = (evt) => {
-    if (typeof heightFieldInput !== "number") {
+    userHeightInput = evt.target.value;
+    if (isNaN(userHeightInput)) {
         alert("Numbers only");
     }
-    userHeightInput = evt.target.value;
+   
 }
 
 const weightFieldInput = (evt) => {
-    if (typeof weightFieldInput !== "number") {
+    userWeightInput = evt.target.value;
+    if (isNaN(userWeightInput)) {
         alert("Numbers only");
     }
-    userWeightInput = evt.target.value;
+    
 }
 
 const submitButtonHandler = () => {

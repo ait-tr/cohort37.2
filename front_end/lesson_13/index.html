@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/index.js" defer></script>
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class = "wrap">
+        <div class="container">
+            <h1>Currency Converter</h1>
+            <div class="box">
+                <input class="entAmount" type="text" name="inputNumber" placeholder="Enter amount" id="currencyAmount">
+                <div class="wrapSelections">
+                <select name="inputCurrency" id="currencySelectionInput">
+                    <option value="Euro" selected>Euro</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="Polish zloty">Polish zloty</option>
+                </select>
+                <select name="inputCurrency" id="currencySelectionOutput">
+                    <option value="Euro" selected>Euro</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="Polish zloty">Polish zloty</option>
+                </select>
+            </div>
+            </div>
+            <div class="result">
+            <div class="button box">
+                <button type="submit" id="submitBtn">CALCULATE</button>
+            </div>
+            
+            <div class="output-box">
+                <p>Result:</p>
+                <output id="result"></output>
+            </div>
+        </div>
+
+
+
+        
+        <div>
+        <div>
+
+        </div>
+
+    </div>
+
+    </div>
+</div>
+    
+</body>
+</html>

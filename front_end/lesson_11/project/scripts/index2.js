@@ -49,4 +49,4 @@ const notANumber = () => {
 }
 inputHeightElement.addEventListener('input', heightFieldInput);
 inputWeightElement.addEventListener('input', weightFieldInput);
-calculateButtonElemnt.addEventListener('click', submitButtonHandler);
+calculateButtonElemnt.addEventListener('click', submitButtonHandler)
