@@ -14,7 +14,13 @@ bmiForm.addEventListener('submit', function(event) {
   alert("Пожалуйста, введите корректные числовые значения.");
   heightInput.value = '';
   weightInput.value = '';
- } 
+ }
+
+//  else if (!height || !weight) {
+//   alert("Пожалуйста, заполните оба поля.");
+//   heightInput.value = '';
+//   weightInput.value = '';
+// }
 
  const bmi = calcBMI(height, weight);
  const bmiRes = document.querySelector('#bmi-res');
@@ -26,7 +32,6 @@ function calcBMI(height, weight) {
     height = height / 100;
     return weight / (height * height);
 }
-// console.log(calcBMI)
 
 function displayStatus(bmi) {
     let res = '';
@@ -41,9 +46,3 @@ function displayStatus(bmi) {
     }
     document.getElementById('status').textContent = 'Состояние: ' + res;
 }
-// console.log(displayStatus);
-
-//  if (!height || !weight) {
-//     alert("Пожалуйста, заполните оба поля.");
-//     return;
-// }
