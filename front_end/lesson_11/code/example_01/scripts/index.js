@@ -2,7 +2,7 @@ const listItemTwoElement = document.querySelector('#second-item');
 //document.getElementById('second-item');
 
 
-// console.log(listItemTwoElement);
+console.log(listItemTwoElement);
 
 
 // listItemTwoElement.style.backgroundColor = 'blue';
