@@ -16,15 +16,11 @@ let todoList = [
 {task: "Поехать в отпуск", done: false, deadline: "2024-02-29"}
 ];
 
-
-const createButton = document.querySelector('.btn');
-let userInputText;
-
 const createButtonHandler = () => {
     const listAllElements = document.querySelector('.list');
     todoList.forEach(taskObj => {
         const newListItem = document.createElement('li');
-        newListItem.textContent = `${taskObj.task}`;
+        newListItem.textContent = taskObj.task;
         newListItem.classList.add('list-item');
         if(taskObj.done){
         newListItem.classList.add('list-item_done');
@@ -33,10 +29,71 @@ const createButtonHandler = () => {
 
 });
 }
-
 createButtonHandler();
 
+const createButton = document.querySelector('.btn');  
 
-const inputHandler = () => {
-    userInputText = inputElement.value;
-}
+const addTaskFromInput = () => {
+    const taskInput = document.querySelector('.task-input');
+    const taskName = taskInput.value;
+    if(taskName){
+        todoList.push({
+            task: taskName,
+            done: false,
+            deadline: ""
+        });
+    } 
+    taskInput.value = '';
+        updateList(); 
+};
+
+createButton.addEventListener('click', addTaskFromInput); 
+
+const updateList = () => {
+    const listAllElements = document.querySelector('.list');
+    listAllElements.textContent = '';  //очистка списка перед добавлением
+
+     const filteredTasks = todoList.filter(taskObj => {
+        if (currentFilter === 'выполненные') return taskObj.done;
+        if (currentFilter === 'невыполненные') return !taskObj.done;
+        return true; 
+    });
+    
+    filteredTasks.forEach(taskObj => {
+        const newListItem = document.createElement('li');
+        newListItem.textContent = taskObj.task;
+        newListItem.classList.add('list-item');
+        if(taskObj.done){
+        newListItem.classList.add('list-item_done');
+        }
+        newListItem.addEventListener('click', () =>{
+            taskObj.done = !taskObj.done;
+            updateList();
+        });
+        listAllElements.append(newListItem);
+    });
+};
+
+const allTaskButton = document.getElementById('all');
+const completedTaskButton = document.getElementById('completed');
+const uncompletedTaskButton = document.getElementById('uncompleted');
+
+let currentFilter = 'все'; 
+
+allTaskButton.addEventListener('click', () => {
+    currentFilter = 'все';
+    updateList();
+});
+
+completedTaskButton.addEventListener('click', () => {
+    currentFilter = 'выполненные';
+    updateList();
+});
+
+uncompletedTaskButton.addEventListener('click', () => {
+    currentFilter = 'невыполненные';
+    updateList();
+});
+
+
+
