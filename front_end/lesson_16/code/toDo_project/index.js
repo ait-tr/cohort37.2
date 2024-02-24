@@ -16,22 +16,23 @@ let todoList = [
 {task: "Поехать в отпуск", done: false, deadline: "2024-02-29"}
 ];
 
+const createButton = document.querySelector('.btn'); 
+
 const createButtonHandler = () => {
     const listAllElements = document.querySelector('.list');
-    todoList.forEach(taskObj => {
+    listAllElements.textContent = '';
+    const listItems = todoList.map(taskObj => {
         const newListItem = document.createElement('li');
         newListItem.textContent = taskObj.task;
         newListItem.classList.add('list-item');
         if(taskObj.done){
         newListItem.classList.add('list-item_done');
         }
-        listAllElements.append(newListItem);
-
+        return newListItem;
 });
-}
-createButtonHandler();
-
-const createButton = document.querySelector('.btn');  
+listAllElements.append(...listItems);
+};
+createButton.addEventListener('click', createButtonHandler());
 
 const addTaskFromInput = () => {
     const taskInput = document.querySelector('.task-input');
@@ -46,8 +47,6 @@ const addTaskFromInput = () => {
     taskInput.value = '';
         updateList(); 
 };
-
-createButton.addEventListener('click', addTaskFromInput); 
 
 const updateList = () => {
     const listAllElements = document.querySelector('.list');
@@ -80,20 +79,11 @@ const uncompletedTaskButton = document.getElementById('uncompleted');
 
 let currentFilter = 'все'; 
 
-allTaskButton.addEventListener('click', () => {
-    currentFilter = 'все';
-    updateList();
-});
+allTaskButton.addEventListener('click', () => (currentFilter = 'все', updateList()));
 
-completedTaskButton.addEventListener('click', () => {
-    currentFilter = 'выполненные';
-    updateList();
-});
+completedTaskButton.addEventListener('click', () => (currentFilter = 'выполненные', updateList()));
 
-uncompletedTaskButton.addEventListener('click', () => {
-    currentFilter = 'невыполненные';
-    updateList();
-});
+uncompletedTaskButton.addEventListener('click', () => (currentFilter = 'невыполненные', updateList()));
 
 
 

@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {  /* // для мобильных приложений  */
+height: 100vh;
+display: grid;
+background-color: bisque;
+/* grid-template-rows: 200px 100px 250px 250px 200px;   */
+grid-template-rows: 200px 100px 1fr 1fr 1fr 200px;  
+grid-template-columns: 1fr;
+grid-template-areas: 
+"header "
+"nav"
+"section"
+"article"
+"aside"
+"footer";
+}
+
+@media screen and (min-width: 768px) {   /* // для большого экрана  */
+    .container {
+        grid-template-rows: 200px 100px 1fr 1fr 200px;  
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "section aside"
+        "article aside"
+        "footer footer";   
+    }
+}
+
+header {
+    background-color: rgb(135, 200, 179);
+    grid-area: header;
+   
+}
+nav {
+    background-color: rgb(225, 137, 105);
+    grid-area: nav;
+}
+
+.grid-section {
+grid-area: section;
+background-color: burlywood;
+display: grid;
+/* column-gap: 10px; */
+grid-template-columns: 1fr 1fr 1fr 1fr;  /* //  repeat(4, 1fr) */
+justify-items: center;  /*  //stretch */
+align-items: center;
+justify-content: space-around;
+
+}
+
+.card {
+    background-color: darkgreen;
+    height: 50px;
+    width: 50px;
+    
+}
+
+.grid_article {
+grid-area: article;
+background-color: dimgray;
+}
+.grid-aside {
+grid-area: aside;
+background-color: darkolivegreen;
+}
+footer {
+    background-color: darkkhaki;
+    grid-area: footer;
+}
