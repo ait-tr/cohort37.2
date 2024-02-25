@@ -1,0 +1,42 @@
+.main-container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "nav"
+        "hero";
+}
+
+.menu {
+    grid-area: nav;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.navItem {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px; 
+    color: black;
+    padding: 5px;
+    margin: 15px;
+
+}
+
+.image {
+    height: 37px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-wrap: wrap; 
+    }
+
+    .navItem {
+        width: calc(50% - 10px); 
+        margin: 5px; 
+    }
+}
