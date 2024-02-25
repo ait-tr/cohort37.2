@@ -36,8 +36,8 @@ console.log(randomArrInObject);
     sing: 'love',
     speed: 90 };
 
-const stringFromObj = Object.entries(johnDoe).join(', ');
-console.log(stringFromObj);
+const stringFromObj = (obj) => Object.values(obj).join(', ');
+console.log(stringFromObj(johnDoe));
 
 /*Напишите функцию, которая принимает объект и возвращает другой обьект, который
 содержит все свойства исходного обьетка, но значения свойств - это их типы.*/
