@@ -26,3 +26,5 @@ const playerJohn = {
 }
 
 Object.setPrototypeOf(player, human) // первый прототип второго
+
+

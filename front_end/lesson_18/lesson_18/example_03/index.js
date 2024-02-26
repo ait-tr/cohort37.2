@@ -22,3 +22,5 @@ if(player.hasOwnProperty(property)){
     console.log(property);
 }
 }
+
+
