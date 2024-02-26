@@ -22,7 +22,7 @@ const playerJohn = {
         this.name = lastName;
     }
 
-    playerJohn.fullName = 'Johnny Depp';
+    //playerJohn.fullName = 'Johnny Depp';
 }
 
 Object.setPrototypeOf(player, human) // первый прототип второго

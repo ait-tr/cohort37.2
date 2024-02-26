@@ -26,10 +26,10 @@ console.log(summ(numbers));
 /*Написать функцию, которая принимает на вход массив чисел и возвращает
 массив из тех же элементов, но в обратном порядке.*/
 
-const lineNumbers = [1,2,3,4,5,6,7,8,9]
+const lineNumbers = [2, 4, 3 ,1]
 
 const reverce = (arr) => {
-    return arr.sort((a,b) => b-a)
+    return arr.slice().reverse();
 }
 console.log(reverce(lineNumbers));
 
@@ -46,17 +46,11 @@ const customers = {
     }
  }
 
- const ourBlvdCustomers = (obj) => {
-    let arrCustomers = []; 
-    for(const key in obj){
-        const client = {
-            name: obj[key].name,
-            age: obj[key].age,
-            id: key
-        };
-        arrCustomers.push(client);
+ const ourBlvdCustomers = (c) => {
+    const client = Object.entries(c).map(([key, value]) => ({...value, id: key}));
     
+    return client;
     }
-    return arrCustomers;
- }
+ 
+
  console.log(ourBlvdCustomers(customers));
