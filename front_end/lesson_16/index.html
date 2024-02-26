@@ -5,7 +5,7 @@
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="./scripts/index2.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
     <title>ToDo</title>
 </head>
 <body>
@@ -15,14 +15,12 @@
         <input class="task-input" type="text"/>
         <button class="btn">Создать</button>
     </div>
-    <div>
-<input type="radio" id="allTasks" name="selector">
-<label for="allTasks">Показать все</label><br>
-<input type="radio" id="done" name="selector">
-<label for="done">Показать выполненные</label><br>
-<input type="radio" id="notDone" name="selector">
-<label for="notDone">Пказать невыполненые</label>
-    </div>
+
+        <button class="btn" id="all">Все</button>
+        <button class="btn" id="completed">Выполненные</button>
+        <button class="btn" id="not_completed">Не выполненные</button>
+
+    <details open>
     <ul class="list">
         <!-- <li class="list-item">
             Сделать домашку
@@ -30,7 +28,10 @@
         <li class="list-item" id="second-item">
             Повторить
         </li> -->
+
+
     </ul>
+    </details>
 </main>
 </body>
 </html>

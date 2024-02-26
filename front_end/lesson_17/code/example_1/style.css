@@ -1,61 +1,82 @@
 * {
     margin: 0;
-
+    padding: 0;
 }
 
-.main-container { 
- height: 100vh;
- background-color: blueviolet;
- display: grid;
- grid-template-rows: 200px 100px 1fr 1fr 1fr 200px;
- grid-template-columns:1fr;
-grid-template-areas: 
-"header"
-"nav"
-"section"
-"article"
-"aside"
-"footer";
-
+.main-container {
+    height: 100vh;
+    background-color: bisque;
+    display: grid;
+    grid-template-rows: 200px 100px 1fr 1fr 1fr 200px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "section"
+    "article"
+    "aside"
+    "footer"
+    ;
 }
 
 @media screen and (min-width: 768px) {
-    .main-container{
-    grid-template-rows: 200px 100px 1fr 1fr 200px;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: 
-    "header header"
-    "nav nav"
-    "section aside"
-    "article aside"
-    "footer footer";
-}
+    .main-container {
+        grid-template-rows: 200px 100px 1fr 1fr 200px;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "section aside"
+        "article aside"
+        "footer footer"
+    }
 }
 
-header{
-background-color: gray;
-grid-area: header;
+
+header {
+    background-color: aquamarine;
+    grid-area: header;
 }
-nav{
-background-color: aliceblue;
-grid-area: nav;
+
+nav {
+    background-color: lightgreen;
+    grid-area: nav;
 }
-/* .main-content{
-background-color: rgb(183, 73, 73);
-} */
-footer{
-background-color: rgb(58, 121, 175);
-grid-area: footer;
-}
+
 .grid-section {
     grid-area: section;
-    border: 1px solid;
+    display: grid;
+    column-gap: 10px;
+    background-color: cadetblue;
+    grid-template-columns: repeat(4, 100px);
+    /* grid-template-rows: 100px 100px; */
+    justify-items: center;
+    align-items: center;
+    /* justify-items: stretch;
+    align-items: stretch; */
+    justify-content: space-around;
+    /* align-content: space-around; */
+    
 }
+
+.card {
+    background-color: darkblue;
+    height: 50px;
+    width: 50px;
+}
+
+
 .grid-article {
-    border: 1px solid;
     grid-area: article;
+    background-color: coral;
 }
+
 .grid-aside {
     grid-area: aside;
-    border: 1px solid;
+    background-color: crimson;
+}
+
+footer {
+    background-color: burlywood;
+    grid-area: footer;
 }

@@ -15,58 +15,72 @@ let todoList = [
     {task: "Послать резюме", done: true, deadline: "2024-02-20"},
     {task: "Поехать в отпуск", done: false, deadline: "2024-02-29"}
 ];
-const listItemTwoElement = document.querySelector('#second-item');
-document.getElementById('second-item');
-
-// console.log(listItemTwoElement);
-// listItemTwoElement.style.backgroundColor = 'blue';
-listItemTwoElement.classList.add('list-item_done');
-listItemTwoElement.addEventListener('click', listItemTwoHandler);
-
+const listObject = document.querySelector('.list');
+const all = document.querySelector('#all');
+const completed = document.querySelector('#completed');
+const notCompleted = document.querySelector('#not_completed');
 const inputElement = document.querySelector('.task-input');
 const createButton = document.querySelector('.btn');
 let userInputText;
-const createButtonHandler = (object) => {
-    const newListItem = document.createElement('li');
-    newListItem.classList.add('list-item');
-    newListItem.textContent = object['task'];
-    if(object['done'] === true){
-        newListItem.classList.add('list-item_done');
-    }
-    const listAllElements = document.querySelector('.list');
-    listAllElements.append(newListItem);
-}
-let test = document.querySelector('.list-item');
-// const listItemTwoHandler = (object) => {
-//     if(object['done'] === false){
-//         test.classList.add('.list-item_done');
-//     }
+const listItemHandler = (evt) => {                                          //переключатель 
+    evt.target.classList.toggle('list-item_done');
+};
+// const createButtonHandler = (object) => {                            //это нам теперь и не нужно из за updateList
+//     const newListItem = document.createElement('li');
+//     newListItem.classList.add('list-item');
+//     newListItem.textContent = object['task'];
+//         if(object['done'] === true){
+//             newListItem.classList.add('list-item_done');
+//         }
+//     const listAllElements = document.querySelector('.list');
+//     listAllElements.append(newListItem);
 // }
-const createButtonHandler2 = () => {
-
-    const newTask = {task: userInputText , done: true, deadline: "2024-02-29"};
-    todoList.push(newTask);
-
-    const newListItem = document.createElement('li');
-    newListItem.classList.add('list-item');
-    newListItem.textContent = userInputText;
-    const listAllElements = document.querySelector('.list');
-    listAllElements.append(newListItem);
-}
-
-todoList.forEach(createButtonHandler);
-createButton.addEventListener('click', createButtonHandler2);
-
-//createButton.addEventListener('click', createButtonHandler);
-// const str = 'word';
-// console.log(`My favourite word is "${str}"`);
+// todoList.forEach(createButtonHandler);
 const inputHandler = () => {
-   // console.log(evt);
-   // userInputText = evt.target.value;
     userInputText = inputElement.value;
 }
+
+const createButtonHandler2 = () => {
+    if(userInputText !== undefined){                                    //проверка на пустую строку
+        if(userInputText !== ''){
+            const newTask = {task: userInputText , done: false};
+            todoList.push(newTask);
+        }
+    }
+    // const newListItem = document.createElement('li');                зачем если он уже его добовляет в массив
+    // newListItem.classList.add('list-item');
+    // newListItem.textContent = userInputText;
+    // const listAllElements = document.querySelector('.list');
+    // listAllElements.append(newListItem);
+    updateList(todoList);
+}
+const updateList = (list) =>{                                           //обновляет массив очищая всё и затем добавляет по новой всё что ему передаётся 
+    listObject.innerHTML = '';      // => очищает содержимое
+    list.map(task => {
+        const newListItem = document.createElement('li');
+        newListItem.classList.add('list-item');
+        newListItem.textContent = task['task'];
+            if(task['done']){
+                newListItem.classList.add('list-item_done');
+            }
+            inputElement.value = '';
+        newListItem.addEventListener('click', listItemClickHandler);
+        listObject.append(newListItem);
+    });
+}
+
+
+  
+const listItemClickHandler = (event) => {                                //переключает состояние объекта / true = false а / false = true
+    const task = todoList.find(task => task.task === event.target.textContent); // => ищет по task и возвращает этот обхект
+    task.done = !task.done;
+    updateList(todoList);
+}
+listObject.addEventListener('click', listItemHandler);
+createButton.addEventListener('click', createButtonHandler2);
 inputElement.addEventListener('input', inputHandler);
-//
-// const btnHandler = (evt) => {
-//     evt.preventDefault();
-// }
+all.addEventListener('click', () => updateList(todoList));
+completed.addEventListener('click', () => updateList(todoList.filter(task => task.done)));          //фильтрует сделано
+notCompleted.addEventListener('click', () => updateList(todoList.filter(task => !task.done)));      //фильтрует не сделанио
+updateList(todoList);
+console.log(todoList);
