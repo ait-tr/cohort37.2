@@ -1,0 +1,9 @@
+## Задачи на урок:
+
+Прототипное наследование
+Объект
+this и контекст
+глобальный объект, текущий объект
+call, apply, bind
+Методы object:
+- getPrototypeOf, setPrototypeOf
