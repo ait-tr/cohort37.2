@@ -18,8 +18,8 @@ let todoList = [
 
 const createButton = document.querySelector('.btn'); 
 
+
 const createButtonHandler = () => {
-    const listAllElements = document.querySelector('.list');
     listAllElements.textContent = '';
     const listItems = todoList.map(taskObj => {
         const newListItem = document.createElement('li');
@@ -32,7 +32,7 @@ const createButtonHandler = () => {
 });
 listAllElements.append(...listItems);
 };
-createButton.addEventListener('click', createButtonHandler());
+createButton.addEventListener('click', createButtonHandler);
 
 const addTaskFromInput = () => {
     const taskInput = document.querySelector('.task-input');
@@ -47,6 +47,7 @@ const addTaskFromInput = () => {
     taskInput.value = '';
         updateList(); 
 };
+taskInput.addEventListener('click', addTaskFromInput);
 
 const updateList = () => {
     const listAllElements = document.querySelector('.list');
@@ -58,19 +59,20 @@ const updateList = () => {
         return true; 
     });
     
-    filteredTasks.forEach(taskObj => {
+    const listItems = filteredTasks.map(taskObj => {
         const newListItem = document.createElement('li');
         newListItem.textContent = taskObj.task;
         newListItem.classList.add('list-item');
         if(taskObj.done){
         newListItem.classList.add('list-item_done');
         }
-        newListItem.addEventListener('click', () =>{
+        newListItem.addEventListener('click', () => {
             taskObj.done = !taskObj.done;
             updateList();
         });
-        listAllElements.append(newListItem);
+        return newListItem;
     });
+    listAllElements.append(...listItems);
 };
 
 const allTaskButton = document.getElementById('all');

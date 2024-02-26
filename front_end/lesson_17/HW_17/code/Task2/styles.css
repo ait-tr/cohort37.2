@@ -34,15 +34,15 @@
     text-transform: uppercase;
     }
 .background1 {
-    background-image: url("../Task2/img/1-1.webp");
+    background-image: url("./img/1-1.webp");
     background-size: cover;
     }
 .background2 {
-    background-image: url("../Task2/img/green-mile\ \(1\).webp");
+    background-image: url("./img/green-mile1.webp");
     background-size: cover;
     }
 .background3 {
-    background-image: url("../Task2/img/run.webp");
+    background-image: url("./img/run.webp");
     background-size: cover;
     } 
 .wrap {
