@@ -8,6 +8,7 @@ function filterNames(names) {
 }
 console.log(filterNames(names));
 
+
 // Task2: Написать функцию, которая принимает на вход массив числе и возвращает 
 // их сумму. Если получится использовать метод reduce - будет здорово.
 
@@ -48,3 +49,6 @@ const objToArray = (obj) => Object.keys(obj).map((key) => ({
     ...obj[key]
 }));
 console.log(objToArray(customer));
+
+
+

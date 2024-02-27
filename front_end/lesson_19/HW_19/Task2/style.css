@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 100;
+
+}
+
+.footer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #46454c; 
+    color: white;
+    padding: 20px;
+    text-align: left; 
+}
+
+.foot-item {
+    display: block; 
+    color: white; 
+    text-decoration: none; 
+    margin-bottom: 20px; 
+}
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo-link {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; 
+    display: inline-flex;
+    overflow: hidden;
+    background-color: white; 
+    border-radius: 50%; 
+    
+}
+.logo {
+    width: 100%; 
+    height: 100%; 
+    background-position: center; 
+    background-size: cover;
+}
+
+.img1 { background-image: url('./images/fb.png');}
+.img2 { background-image: url('./images/you.png');}
+.img3 { background-image: url('./images/in.png');}
+.img4 { background-image: url('./images/inst.png');}
+
+.contact-info {
+    margin: 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: start;
+    }
+    .footer-section {
+        flex: 1; 
+        margin-right: 20px;
+        padding-right: 20px;
+    }
+    .foot-item {
+        margin-bottom: 10px; 
+    }
+    .logo-container {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
