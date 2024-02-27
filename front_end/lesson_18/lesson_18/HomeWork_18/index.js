@@ -3,7 +3,7 @@
 const names = ['Jasmine', 'Amelia', 'Noah', 'Sofia', 'Alexander', 'Liam', 'Isabella', 'Lucas', 'Aaron', 'Mia', 'Oliver', 'Ava', 'Ethan'];
 
 const filterNames = (array, letter) => {
-    const namesStartsFromA = array.filter(element => element.charAt(0).toLowerCase()===(letter))
+    const namesStartsFromA = array.filter(element => element.toLowerCase().startsWith(letter)) //.charAt(0).toLowerCase()===(letter)
     return namesStartsFromA;
 }
 
