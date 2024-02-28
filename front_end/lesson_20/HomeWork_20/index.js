@@ -3,8 +3,12 @@ const submitButton = document.querySelector('button');
 const timeCountdown = document.querySelector('#outputTime');
 
 const inputTime = () => {
-if (userInput.value < 0) userInput.value = 0;
+    
+    if (isNaN(userInput.value) || userInput.value.trim() === '' || userInput.value < 0) {
+        userInput.value = 0;
+    }
 }
+
 
 const submitButtonHandler = () => {
 
