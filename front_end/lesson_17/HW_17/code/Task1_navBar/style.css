@@ -1,0 +1,23 @@
+
+.navigation {
+    display: grid; 
+    grid-template-columns: 1fr repeat(6, auto); 
+    text-align: center; 
+    background-color: black; 
+    padding: 10px 0;
+    height: 50px;
+    align-items: center; 
+  }
+  .nav-logo {
+    background-image: url('./images/apple.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70%;
+  }
+  .nav-item {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px; 
+    display: block; 
+  }
