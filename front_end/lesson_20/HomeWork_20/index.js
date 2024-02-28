@@ -10,10 +10,10 @@ const submitButtonHandler = () => {
 
     submitButton.removeEventListener('click', submitButtonHandler);
 
+    submitButton.classList.add('buttonClick')
+    
     let timeRemaining = parseInt(userInput.value);
-    
-    
-   
+     
     timeCountdown.textContent = `Left: ${userInput.value}`;
 
 const countdownInterval = setInterval(() => {
@@ -23,10 +23,11 @@ const countdownInterval = setInterval(() => {
             clearInterval(countdownInterval);
             timeCountdown.textContent = 'Time is up!';
             userInput.value = '';
+            submitButton.classList.remove('buttonClick');
+            submitButton.classList.add('buttonA');
             submitButton.addEventListener('click', submitButtonHandler);
         } else {
-            timeCountdown.textContent = `Left: ${timeRemaining}`;
-             
+            timeCountdown.textContent = `Left: ${timeRemaining}`;   
         }
     }, 1000);
 }
