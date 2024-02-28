@@ -42,16 +42,17 @@ console.log(mergeObjects(object1, object2));
 const comparison = (o1, o2) => {
     const tempO1 = Object.entries(o1);
     const tempO2 = Object.entries(o2);
+  console.log(tempO1[0]===tempO2[0])
     if( tempO1.length !== tempO2.length){
         return false;
     }
     const result = tempO1.map((element, index) => {
             return element === tempO2[index];
         });
-        return !result.includes();
+        return !result.includes(false);
     }
     
 
-console.log (comparison(object1, object3))
+console.log (comparison(object2, object3))
 
 
