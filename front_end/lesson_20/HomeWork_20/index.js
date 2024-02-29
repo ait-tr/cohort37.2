@@ -4,13 +4,16 @@ const timeCountdown = document.querySelector('#outputTime');
 
 const inputTime = () => {
     
-    if (isNaN(userInput.value) || userInput.value.trim() === '' || userInput.value < 0) {
+    if ( !userInput.value || userInput.value < 0) {
         userInput.value = 0;
     }
 }
 
-
 const submitButtonHandler = () => {
+
+    inputTime();
+
+    console.log(userInput.value);
 
     submitButton.removeEventListener('click', submitButtonHandler);
 
