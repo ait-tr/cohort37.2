@@ -21,13 +21,12 @@ quitButton.addEventListener('click', function() {
 function lotteryPromise() {
     return new Promise((accept, reject) => {
         const randomNumber = Math.floor(Math.random() * 100) + 1;
-        setTimeout(() => {
             if (randomNumber > 70) {
                 accept(randomNumber);
             } else {
                 reject(randomNumber);
             }
         }); 
-    });
-}
+    };
+
 
