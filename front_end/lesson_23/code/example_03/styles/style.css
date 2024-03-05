@@ -1,0 +1,49 @@
+body {
+    font-family:DejaVu Sans Mono, monospace; /*https://www.w3.org/Style/Examples/007/fonts.ru.html*/
+    margin: 0;
+    padding: 0;
+        
+    }
+    .container {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-direction: row;
+    background-color: cornflowerblue;
+    }
+    
+    .form-group {  
+    height: 50%;
+    width: 500px;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    gap: 15px;
+    }
+    
+    button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 25%;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: #396696;
+    color: white;
+    }
+    
+    .currency {
+    height: 35px;
+    width: 150px;
+    text-align: center;
+    }
+    
+    button:hover {
+    background-color: #0056b3;
+    }
+    .number {
+    height: 30px; 
+    }

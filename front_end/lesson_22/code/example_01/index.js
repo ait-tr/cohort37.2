@@ -23,8 +23,7 @@ githubDataKate
         githubDataKateRepos
         .then((response) => {returnresponse.json()})
         .then((resultObject) => {
-            console.log(resultObject(0).name)
-        })
+            console.log(resultObject(0).name)})
         
     })
 
@@ -46,5 +45,3 @@ function showRepos(reposUrl) {
     reposElement.src = reposUrl;
     containerForRepos.append(reposElement);
 }
-
-

@@ -5,7 +5,7 @@
 
 function fetchTodoList() {
 fetch('https://jsonplaceholder.typicode.com/todos')
-.then(response => response.json()) // вернет промис с результатом вызова его функции-аргемента(объект)
+.then(response => response.json()) // вернет промис с результатом вызова его функции-аргумента(объект)
 .then(todos => {
     const listElement = document.querySelector('#todoList');
     todos.forEach(todo => {
