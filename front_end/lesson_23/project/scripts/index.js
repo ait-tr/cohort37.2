@@ -1,10 +1,10 @@
 //let currencyValue = {'GBP':0.85, 'USD':'0.80', 'Polish zloty':'4.34', 'Euro':'1'};
 
-const inputCurrencyAmount = document.querySelector('#currencyAmount');
+//https://openexchangerates.org/api/latest.json?app_id=c56da6a380da489ea5745895577c2ac4
 
+const inputCurrencyAmount = document.querySelector('#currencyAmount');
 const selectedTypeCurrency = document.querySelector('#currencySelectionInput')
 const selectedTypeCurrencyOutput = document.querySelector('#currencySelectionOutput')
-
 const calculateButtonElemnt = document.querySelector('#submitBtn');
 
 const resulfField = document.querySelector('#result');
@@ -18,17 +18,19 @@ let userCurrencyAmount;
 let currencyFrom;
 let currencyTo;
 
-const currencyImput = () => {
+const currencyImput = (evnt) => {
    currencyFrom = selectedTypeCurrency.value;
 }
 
-const currencyOutput = () => {
+const currencyOutput = (evnt) => {
     currencyTo = selectedTypeCurrencyOutput.value;
 }
 
-const imputFieldAmount = () => {
+const imputFieldAmount = (evnt) => {
     userCurrencyAmount = inputCurrencyAmount.value;
 }
+
+
 
 const calculator = (currencyFrom = currencyEuro, currencyTo = currencyEuro, userCurrencyAmount = 0) =>{
     let koef1;
