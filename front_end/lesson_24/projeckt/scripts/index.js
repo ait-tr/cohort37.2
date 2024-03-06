@@ -1,4 +1,4 @@
-
+//https://kinopoiskapiunofficial.tech/api/v2.2/films/ {сюда вставить полученный id}
 
   const fetchParams = {
     method: 'GET',
@@ -12,11 +12,25 @@
 const movieData = async (q, f) => {
     const serverReponse = await fetch(q, f);
     const body = await serverReponse.json(); 
-    insertDataOfMovie(body.films);
- console.log(body.films)   
+   // insertDataOfMovie(body);
+   const arrayOfFilms = body.films;
+   console.log('arr '+ arrayOfFilms[0].filmId);
+   const dataFilmsWithDescr = await body.films.forEach(async (element, index)=>{
+    const dataMovieEl = await fetch(`https://kinopoiskapiunofficial.tech/api/v2.2/films/${element.filmId}`, f);
+    const descrptBody = await dataMovieEl.json();
+    arrayOfFilms[index] = {...arrayOfFilms[index], description: descrptBody.description}
+    console.log(arrayOfFilms[index]);
+
+    
+    
+   })
+ console.log(body.films);
+ console.log(dataFilmsWithDescr);   
 }
 const dataOfMovie = movieData('https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_250_BEST_FILMS&page=1', fetchParams );
 console.log(dataOfMovie);
+
+
 
 
 const movieYear = document.querySelector('#year');
