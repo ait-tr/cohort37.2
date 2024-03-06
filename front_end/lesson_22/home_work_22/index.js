@@ -1,15 +1,18 @@
 //Взять данные по списку дел с этого endpoint: https://jsonplaceholder.typicode.com/todos 
 //и вывести их на страницу в виде упорядоченного списка
 
-const placeHolderList = fetch('https://jsonplaceholder.typicode.com/todos');
+const placeHolderList = async (qwery) => {
+    const response = await fetch(qwery);
+            const data = await response.json();
+            return data;
+}
 
-placeHolderList
-.then((response) => {return response.json();})
-.then((resultList) => {console.log(resultList);
-    showListOfData(resultList);
-    return resultList;
-})
+const listData = async (adress) => {
+    const responseData = await placeHolderList(adress);
+    showListOfData(responseData);
 
+
+}
 
 
 function showListOfData(listOfData){
@@ -22,4 +25,9 @@ function showListOfData(listOfData){
     })    
 
 }
+
+
+
+
+listData('https://jsonplaceholder.typicode.com/todos');
 
