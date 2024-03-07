@@ -1,6 +1,5 @@
 
 const apiKey = '51928c78db0e41dfa35104107240603';
-
 const elements = {
   citySelect: document.querySelector('#city-select'),
   dateElem: document.querySelector('.date'),
@@ -11,7 +10,7 @@ const elements = {
 };
 
 const getWeather = () => {
-  document.querySelector('#get-weather').addEventListener('click', () => updateWeather(elements.citySelect.value));
+  document.querySelector('#city-select').addEventListener('change', () => updateWeather(elements.citySelect.value));
 };
 
 async function updateWeather(city) {
@@ -36,34 +35,66 @@ function displayWeather(currentData, forecastData) {
   elements.tempElem.textContent = `${currentData.current.temp_c}°C`;
   elements.weatherIcon.innerHTML = '';
   const weatherIconImg = document.createElement('img');
-  weatherIconImg.src = currentData.current.condition.icon;
+
+  let iconUrl = currentData.current.condition.icon;
+  iconUrl = iconUrl.replace('/weather/64x64/', '/weather/128x128/');
+
+  weatherIconImg.src = iconUrl;
   weatherIconImg.alt = currentData.current.condition.text;
   elements.weatherIcon.append(weatherIconImg);
   elements.forecastElem.innerHTML = '';
 
   // новый прогноз
-  forecastData.forecast.forecastday.slice(1).forEach(day => {
+  const forecastElements = forecastData.forecast.forecastday.slice(1).map(day => {
     const forecastDayDiv = document.createElement('div');
     forecastDayDiv.className = 'forecast-day';
-
+  
     const iconImg = document.createElement('img');
-    iconImg.src = day.day.condition.icon;
+    iconImg.src = day.day.condition.icon; 
     iconImg.alt = day.day.condition.text;
-
+  
     const dateDiv = document.createElement('div');
-    dateDiv.className = 'date';
+    dateDiv.className = 'newDate';
     dateDiv.textContent = new Date(day.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
-
+  
     const maxTempDiv = document.createElement('div');
     maxTempDiv.className = 'max-temp';
     maxTempDiv.textContent = `${day.day.maxtemp_c}°C`;
-
+  
     const minTempDiv = document.createElement('div');
     minTempDiv.className = 'min-temp';
     minTempDiv.textContent = `${day.day.mintemp_c}°C`;
+  
     forecastDayDiv.append(iconImg, dateDiv, maxTempDiv, minTempDiv);
-
-    elements.forecastElem.append(forecastDayDiv);
+    return forecastDayDiv;
   });
+  
+  elements.forecastElem.append(...forecastElements);
 }
 getWeather();
+updateWeather('Berlin');
+
+
+  // forecastData.forecast.forecastday.slice(1).forEach(day => {
+  //   const forecastDayDiv = document.createElement('div');
+  //   forecastDayDiv.className = 'forecast-day';
+
+  //   const iconImg = document.createElement('img');
+  //   iconImg.src = day.day.condition.icon;
+  //   iconImg.alt = day.day.condition.text;
+
+  //   const dateDiv = document.createElement('div');
+  //   dateDiv.className = 'newDate';
+  //   dateDiv.textContent = new Date(day.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
+
+  //   const maxTempDiv = document.createElement('div');
+  //   maxTempDiv.className = 'max-temp';
+  //   maxTempDiv.textContent = `${day.day.maxtemp_c}°C`;
+
+  //   const minTempDiv = document.createElement('div');
+  //   minTempDiv.className = 'min-temp';
+  //   minTempDiv.textContent = `${day.day.mintemp_c}°C`;
+  //   forecastDayDiv.append(iconImg, dateDiv, maxTempDiv, minTempDiv);
+
+  //   elements.forecastElem.append(forecastDayDiv);
+  // });
