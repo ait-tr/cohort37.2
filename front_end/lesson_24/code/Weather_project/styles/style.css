@@ -1,0 +1,84 @@
+body{
+margin: 0;
+padding: 0;
+font-family: 'Ostrich Sans', sans-serif;
+background: linear-gradient(to top, #a068d1, #38044a);
+   
+}
+
+.app-container {
+display: flex;
+flex-direction: column;
+min-height: 100vh; 
+justify-content: space-between;
+}
+
+header{
+text-align: center;
+padding: 20px;
+}
+
+.main {
+display: flex; 
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.footer {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding: 20px;
+}
+
+.temperature {
+margin-left: 35%;
+font-size: 5em; 
+font-weight: bold;
+}
+
+.city-menu {
+bottom: 0;
+width: 100%;
+background: rgba(200, 166, 212, 0.9);
+padding: 10px 0;
+text-align: center;
+}
+
+.date, .city {
+font-size: 1.2em; 
+}
+
+.weather-icon img {
+    margin-left: 40%;
+width: 100px; 
+}
+
+.forecast, .temp-max, .temp-min {
+display: flex;
+justify-content: center;
+gap: 20px; 
+overflow-x: auto;
+white-space: nowrap; 
+padding: 10px 0;
+}
+
+.forecast-day, .temp-max-day, .temp-min-day {
+flex: 0 0 auto;
+text-align: center;
+}
+
+@media (max-width: 768px) { 
+.forecast-day, .temp-max-day, .temp-min-day {
+min-width: 80px; 
+}
+}
+
+.city-menu select, .city-menu button {
+font-size: 1em;
+padding: 10px;
+margin: 0 5px;
+border-radius: 10px;
+}
+
