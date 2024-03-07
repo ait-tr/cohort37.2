@@ -21,25 +21,13 @@ const movieData = async (q, f) => {
     console.log(arrayOfFilms[index].nameRu);
     document.querySelector('main').append(createPoster(arrayOfFilms[index]));
     console.log(createPoster(arrayOfFilms[index]));
-
-    
-    
+ 
    })
 
 
 console.log(arrayOfFilms[0]);   
 }
 const dataOfMovie = movieData('https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_250_BEST_FILMS&page=1', fetchParams );
-
-
-
-
-
-const movieYear = document.querySelector('#year');
-const poster = document.querySelector('.background');
-const movieTitle = document.querySelector('#title');
-const movieTieser = document.querySelector('#teaser');
-const genreElement = document.querySelector('#genre');
 
 
 const createPoster = (element) =>{

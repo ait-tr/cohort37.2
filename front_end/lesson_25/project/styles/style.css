@@ -1,0 +1,132 @@
+/* .source-sans 3-<uniquifier> {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
+
+  *{margin: 0;
+    padding: 0;}
+
+.main{
+    height: 667px;
+    width: 375px;
+    background: linear-gradient(#001B31, #003847 65%, #00A67D);
+
+  }
+
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 130px;
+    width: 376px;
+
+
+  }
+
+  .date{
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    
+  }
+  .place{
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  section{
+    height: 310px;
+    width: 376px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .iconForcast{
+    width: 45px;
+  }
+
+  h4{
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+
+
+  }
+  .grad {
+    color: white;
+    font-family: "Roboto", sans-serif;
+     font-style: normal;
+    font-weight: 200;
+    font-size: 75px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .forcast{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+    align-content: space-between;
+  }
+  .wrap{
+    /* flex-basis: auto; */
+    /* flex-direction: row; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .day{
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: center;
+
+  }
+  .tempMax{
+    color: #001B31;
+    align-self: center;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .tempMin{
+    color: white;
+    align-self: center;  
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  h5{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+
+  }
+
+  .mainImg{
+    height: 260px;
+  }
