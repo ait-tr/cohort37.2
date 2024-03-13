@@ -1,4 +1,4 @@
--- Разбор домашнего задания
+-- Разбор домашнего задания (https://drawsql.app/teams/team-3027/diagrams/university)
 -- Факультеты
 CREATE TABLE faculty (id serial PRIMARY KEY, name text);
 
