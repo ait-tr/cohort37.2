@@ -1,0 +1,6 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": ["code/homework.sql", "code/constraints.sql", "code/operators.sql"]
+}
