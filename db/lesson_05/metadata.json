@@ -1,0 +1,11 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/homework.mongodb.js",
+    "./code/users.mongodb.js",
+    "./code/animals.mongodb.js",
+    "./code/university.mongodb.js"
+  ]
+}
