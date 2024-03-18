@@ -1,7 +1,9 @@
 //http://api.weatherapi.com/v1/current.json?key=656884e7f3af4f7abfc221413240603&q=Munich&aqi=no
 //http://api.weatherapi.com/v1/forecast.json?key=656884e7f3af4f7abfc221413240603&q&q=Munich&days=6&aqi=no&alerts=no
 ////cdn.weatherapi.com/weather/64x64/day/176.png
+
 let bodyObject;
+
 const forcastDataObject = async (q, f) => {
     const serverReponse = await fetch(q);
     const data = await serverReponse.json(); 
