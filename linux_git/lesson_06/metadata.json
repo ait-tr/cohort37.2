@@ -11,7 +11,6 @@
     "./code/server-37/docker-compose.yml",
     "./code/server-37/Dockerfile",
     "./code/server-37/package.json",
-    "./code/server-37/package-lock.json",
     "./code/server-37/server.js"
   ],
   "etc": ""
